@@ -14,6 +14,14 @@ module.exports = {
         path: `${__dirname}/blog`
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blogposts`,
+        path: `${__dirname}/src/pages`
+      }
+    },
     "gatsby-plugin-mdx",
+    "gatsby-transformer-remark",
   ],
 };
